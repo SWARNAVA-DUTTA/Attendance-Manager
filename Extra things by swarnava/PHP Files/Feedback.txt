@@ -1,0 +1,25 @@
+<?php
+	$con=mysqli_connect("localhost","id6604446_swarnava","1234567890","id6604446_attendance_manager_db");
+	$msg="";
+
+	if($_SERVER['REQUEST_METHOD']=='POST')
+	{
+		$Email=$_REQUEST['Email'];
+		$Comments=$_REQUEST['Comments'];	
+		
+	
+		    $sql="insert into user_feedback values (NULL,'".$Email."','".$Comments."')";
+		    if(mysqli_query($con,$sql)){
+		    echo "Your feedback is submitted";
+		}else{
+		    echo "ERROR! Try Again";
+		}
+		   
+		   		  } 
+		   
+        
+        else
+	echo "Blank Record";
+	
+	
+?>

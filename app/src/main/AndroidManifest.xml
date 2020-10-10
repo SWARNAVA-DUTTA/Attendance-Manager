@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="developers.android.attendencemanager">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/myicon"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/myicon_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".WelcomeScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Department" />
+        <activity android:name=".YearIT" />
+        <activity
+            android:name=".YearCSE"
+            android:parentActivityName=".Department" />
+        <activity
+            android:name=".YearECE"
+            android:parentActivityName=".Department" />
+        <activity
+            android:name=".YearEE"
+            android:parentActivityName=".Department" />
+        <activity
+            android:name=".YearCIVIL"
+            android:parentActivityName=".Department" />
+        <activity
+            android:name=".YearMECHANICAL"
+            android:parentActivityName=".Department" />
+        <activity
+            android:name=".TeacherStudentSpinnerCSE1"
+            android:parentActivityName=".YearCSE" />
+        <activity
+            android:name=".TeacherStudentSpinnerCSE2"
+            android:parentActivityName=".YearCSE" />
+        <activity
+            android:name=".TeacherStudentSpinnerCSE3"
+            android:parentActivityName=".YearCSE" />
+        <activity
+            android:name=".TeacherStudentSpinnerCSE4"
+            android:parentActivityName=".YearCSE" />
+        <activity
+            android:name=".TeacherStudentSpinnerIT1"
+            android:parentActivityName=".YearIT" />
+        <activity
+            android:name=".TeacherStudentSpinnerIT2"
+            android:parentActivityName=".YearIT" />
+        <activity
+            android:name=".TeacherStudentSpinnerIT3"
+            android:parentActivityName=".YearIT" />
+        <activity
+            android:name=".TeacherStudentSpinnerIT4"
+            android:parentActivityName=".YearIT" />
+        <activity
+            android:name=".TeacherStudentSpinnerECE1"
+            android:parentActivityName=".YearECE" />
+        <activity
+            android:name=".TeacherStudentSpinnerECE2"
+            android:parentActivityName=".YearECE" />
+        <activity
+            android:name=".TeacherStudentSpinnerECE3"
+            android:parentActivityName=".YearECE" />
+        <activity
+            android:name=".TeacherStudentSpinnerECE4"
+            android:parentActivityName=".YearECE" />
+        <activity
+            android:name=".TeacherStudentSpinnerEE1"
+            android:parentActivityName=".YearEE" />
+        <activity
+            android:name=".TeacherStudentSpinnerEE2"
+            android:parentActivityName=".YearEE" />
+        <activity
+            android:name=".TeacherStudentSpinnerEE3"
+            android:parentActivityName=".YearEE" />
+        <activity
+            android:name=".TeacherStudentSpinnerEE4"
+            android:parentActivityName=".YearEE" />
+        <activity
+            android:name=".TeacherStudentSpinnerCIVIL1"
+            android:parentActivityName=".YearCIVIL" />
+        <activity
+            android:name=".TeacherStudentSpinnerCIVIL2"
+            android:parentActivityName=".YearCIVIL" />
+        <activity
+            android:name=".TeacherStudentSpinnerCIVIL3"
+            android:parentActivityName=".YearCIVIL" />
+        <activity
+            android:name=".TeacherStudentSpinnerCIVIL4"
+            android:parentActivityName=".YearCIVIL" />
+        <activity
+            android:name=".TeacherStudentSpinnerMECHANICAL1"
+            android:parentActivityName=".YearMECHANICAL" />
+        <activity
+            android:name=".TeacherStudentSpinnerMECHANICAL2"
+            android:parentActivityName=".YearMECHANICAL" />
+        <activity
+            android:name=".TeacherStudentSpinnerMECHANICAL3"
+            android:parentActivityName=".YearMECHANICAL" />
+        <activity
+            android:name=".TeacherStudentSpinnerMECHANICAL4"
+            android:parentActivityName=".YearMECHANICAL" />
+        <activity
+            android:name=".StudentCSE1"
+            android:parentActivityName=".TeacherStudentSpinnerCSE1" />
+        <activity
+            android:name=".StudentCSE2"
+            android:parentActivityName=".TeacherStudentSpinnerCSE2" />
+        <activity
+            android:name=".StudentCSE3"
+            android:parentActivityName=".TeacherStudentSpinnerCSE3" />
+        <activity
+            android:name=".StudentsCSE4"
+            android:parentActivityName=".TeacherStudentSpinnerCSE4" />
+        <activity
+            android:name=".StudentIT1"
+            android:parentActivityName=".TeacherStudentSpinnerIT1" />
+        <activity
+            android:name=".StudentIT2"
+            android:parentActivityName=".TeacherStudentSpinnerIT2" />
+        <activity
+            android:name=".StudentIT3"
+            android:parentActivityName=".TeacherStudentSpinnerIT3" />
+        <activity
+            android:name=".StudentIT4"
+            android:parentActivityName=".TeacherStudentSpinnerIT4" />
+        <activity
+            android:name=".TeacherCSE1"
+            android:parentActivityName=".TeacherStudentSpinnerCSE1" />
+        <activity
+            android:name=".StudentECE1"
+            android:parentActivityName=".TeacherStudentSpinnerECE1" />
+        <activity
+            android:name=".StudentECE2"
+            android:parentActivityName=".TeacherStudentSpinnerECE2" />
+        <activity
+            android:name=".StudentECE3"
+            android:parentActivityName=".TeacherStudentSpinnerECE3" />
+        <activity
+            android:name=".StudentECE4"
+            android:parentActivityName=".TeacherStudentSpinnerECE4" />
+        <activity
+            android:name=".StudentEE1"
+            android:parentActivityName=".TeacherStudentSpinnerEE1" />
+        <activity
+            android:name=".StudentEE2"
+            android:parentActivityName=".TeacherStudentSpinnerEE2" />
+        <activity
+            android:name=".StudentEE3"
+            android:parentActivityName=".TeacherStudentSpinnerEE3" />
+        <activity
+            android:name=".StudentEE4"
+            android:parentActivityName=".TeacherStudentSpinnerEE4" />
+        <activity
+            android:name=".StudentCIVIL1"
+            android:parentActivityName=".TeacherStudentSpinnerCIVIL1" />
+        <activity
+            android:name=".StudentCIVIL2"
+            android:parentActivityName=".TeacherStudentSpinnerCIVIL2" />
+        <activity
+            android:name=".StudentCIVIL3"
+            android:parentActivityName=".TeacherStudentSpinnerCIVIL3" />
+        <activity
+            android:name=".StudentCIVIL4"
+            android:parentActivityName=".TeacherStudentSpinnerCIVIL4" />
+        <activity
+            android:name=".StudentMECHANICAL1"
+            android:parentActivityName=".TeacherStudentSpinnerMECHANICAL1" />
+        <activity
+            android:name=".StudentMECHANICAL2"
+            android:parentActivityName=".TeacherStudentSpinnerMECHANICAL2" />
+        <activity
+            android:name=".StudentMECHANICAL3"
+            android:parentActivityName=".TeacherStudentSpinnerMECHANICAL3" />
+        <activity
+            android:name=".StudentMECHANICAL4"
+            android:parentActivityName=".TeacherStudentSpinnerMECHANICAL4" />
+        <activity
+            android:name=".TeacherCSE2"
+            android:parentActivityName=".TeacherStudentSpinnerCSE2" />
+        <activity
+            android:name=".TeacherCSE3"
+            android:parentActivityName=".TeacherStudentSpinnerCSE3" />
+        <activity
+            android:name=".TeacherCSE4"
+            android:parentActivityName=".TeacherStudentSpinnerCSE4" />
+        <activity
+            android:name=".TeacherIT1"
+            android:parentActivityName=".TeacherStudentSpinnerIT1" />
+        <activity
+            android:name=".TeacherIT2"
+            android:parentActivityName=".TeacherStudentSpinnerIT2" />
+        <activity
+            android:name=".TeacherIT3"
+            android:parentActivityName=".TeacherStudentSpinnerIT3" />
+        <activity
+            android:name=".TeacherIT4"
+            android:parentActivityName=".TeacherStudentSpinnerIT4" />
+        <activity
+            android:name=".TeacherECE1"
+            android:parentActivityName=".TeacherStudentSpinnerECE1" />
+        <activity
+            android:name=".TeacherECE2"
+            android:parentActivityName=".TeacherStudentSpinnerECE2" />
+        <activity
+            android:name=".TeacherECE3"
+            android:parentActivityName=".TeacherStudentSpinnerECE3" />
+        <activity
+            android:name=".TeacherECE4"
+            android:parentActivityName=".TeacherStudentSpinnerECE4" />
+        <activity
+            android:name=".TeacherEE1"
+            android:parentActivityName=".TeacherStudentSpinnerEE1" />
+        <activity
+            android:name=".TeacherEE2"
+            android:parentActivityName=".TeacherStudentSpinnerEE2" />
+        <activity
+            android:name=".TeacherEE3"
+            android:parentActivityName=".TeacherStudentSpinnerEE3" />
+        <activity
+            android:name=".TeacherEE4"
+            android:parentActivityName=".TeacherStudentSpinnerEE4" />
+        <activity
+            android:name=".TeacherCIVIL1"
+            android:parentActivityName=".TeacherStudentSpinnerCIVIL1" />
+        <activity
+            android:name=".TeacherCIVIL2"
+            android:parentActivityName=".TeacherStudentSpinnerCIVIL2" />
+        <activity
+            android:name=".TeacherCIVIL3"
+            android:parentActivityName=".TeacherStudentSpinnerCIVIL3" />
+        <activity
+            android:name=".TeacherCIVIL4"
+            android:parentActivityName=".TeacherStudentSpinnerCIVIL4" />
+        <activity
+            android:name=".TeacherMECHANICAL1"
+            android:parentActivityName=".TeacherStudentSpinnerMECHANICAL1" />
+        <activity
+            android:name=".TeacherMECHANICAL2"
+            android:parentActivityName=".TeacherStudentSpinnerMECHANICAL2" />
+        <activity
+            android:name=".TeacherMECHANICAL3"
+            android:parentActivityName=".TeacherStudentSpinnerMECHANICAL3" />
+        <activity
+            android:name=".TeacherMECHANICAL4"
+            android:parentActivityName=".TeacherStudentSpinnerMECHANICAL4" />
+        <activity android:name=".LogInActivity" />
+        <activity
+            android:name=".DevelopersActivity"
+            android:parentActivityName=".LogInActivity" />
+        <activity
+            android:name=".FeedbackActivity"
+            android:parentActivityName=".LogInActivity" />
+        <activity
+            android:name=".RegisterActivity"
+            android:parentActivityName=".LogInActivity" />
+        <activity android:name=".Instituition" android:parentActivityName=".LogInActivity"></activity>
+    </application>
+
+</manifest>

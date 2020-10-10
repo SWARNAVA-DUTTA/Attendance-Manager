@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/instituition"
+        android:title="About The Instituition"
+        android:icon="@drawable/instituition" />
+
+    <item
+        android:id="@+id/feedback"
+        android:title="Feedback"
+        android:icon="@drawable/feedback"/>
+    <item
+        android:id="@+id/developers"
+        android:title="Developers Details"
+        android:icon="@drawable/developers"/>
+</menu>

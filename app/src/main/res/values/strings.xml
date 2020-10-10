@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Attendence Manager</string>
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+    <string name="title_activity_my_custom_adapter">myCustomAdapter</string>
+    <string-array name="developer_name">
+        <item>AMISHA SINGH</item>
+        <item>ARGHYA BHOWMICK</item>
+        <item>SNEHA SWATI</item>
+        <item>SWARNAVA DUTTA</item>
+        <item>TIYASHA GIRI</item>
+
+
+    </string-array>
+</resources>

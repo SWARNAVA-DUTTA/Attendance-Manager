@@ -1,0 +1,2 @@
+This app introduces us to the digital attendance system. 
+Using this app, the teacher can take and view the attendance of the students according to their departments and year.

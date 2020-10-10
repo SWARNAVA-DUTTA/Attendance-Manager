@@ -1,0 +1,31 @@
+<?php
+	$con=mysqli_connect("localhost","id6604446_swarnava","1234567890","id6604446_attendance_manager_db");
+	$msg="";
+
+	if($_SERVER['REQUEST_METHOD']=='POST')
+	{
+		$Email=$_REQUEST['Email'];
+		$Password=$_REQUEST['Password'];	
+		
+		$sql="select * from user_teacher where Email='".$Email."'";
+		$rs=mysqli_query($con,$sql);
+		
+		$n=mysqli_num_rows($rs);
+	    if($n>0){
+	       echo "This e-mail is already registered";
+        }else{
+		    $sql="insert into user_teacher values (NULL,'".$Email."','".$Password."')";
+		    if(mysqli_query($con,$sql)){
+		    echo "You are registered successfully";
+		}else{
+		    echo "ERROR! Try Again";
+		}
+		    //mysqli_query($con,$sql);
+		   		  } 
+		   
+        }
+        else
+	echo "Blank Record";
+	
+	
+?>

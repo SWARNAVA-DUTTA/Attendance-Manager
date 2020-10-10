@@ -1,0 +1,23 @@
+<?php
+  $con=mysqli_connect("localhost","id6604446_swarnava","1234567890","id6604446_attendance_manager_db");
+  
+ 
+  
+  if($_SERVER['REQUEST_METHOD']=='POST'){
+    $Email=$_POST['Email'];
+    $Password=$_POST['Password']; 
+    
+    $sql="select * from user_teacher where Email='".$Email."' and Password='".$Password."'";
+    $result=mysqli_query($con,$sql);
+    $check=mysqli_fetch_array($result);
+    if(isset($check)){
+        mysqli_close($con);
+        echo "You are Welcome";
+    }else{
+        mysqli_close($con);
+        echo "Log In failed...Try Again";
+    }
+  }else{
+      echo "Input not provided";
+  }
+?>
